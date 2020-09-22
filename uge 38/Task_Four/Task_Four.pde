@@ -11,10 +11,10 @@
  int[] intArray = new int[3];
  String[] stringArray = new String [5];
  boolean[] booleanArray = new boolean [3];
-booleanArray[0] = true;
+/*booleanArray[0] = true;
 booleanArray[1] = false;
 booleanArray[2] = true;
-
+*/
 
  void setup(){
   for(int i =0;i<3;i++) {
@@ -24,8 +24,8 @@ booleanArray[2] = true;
    println(stringArray[i]);
   }
   
-  println(sumOfArray(intArray1));
-  
+  //println(sumOfArray(intArray1));
+  getAverage(arrayOfInt);
  } 
   
 
@@ -47,5 +47,14 @@ int sumAfArray(int[] intArray1) {
 
 // 4.d Write a function that receives an integer array as a parameter and returns the average value.
 
+void getAverage(int[] arrayOfInt){ //metodens parameter
+  int sum = sumAfArray(arrayOfInt);
+  println(sum);
+  
+  
+  
+}
 
-// 4.e Consider how you could write a function that takes in an integer array as a parameter and returns the array sorted from lowest to highest value.
+
+
+//4.e Consider how you could write a function that takes in an integer array as a parameter and returns the array sorted from lowest to highest value.
